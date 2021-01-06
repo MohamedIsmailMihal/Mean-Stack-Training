@@ -1,0 +1,94 @@
+NavigationBar:
+==============
+--A NavigationBar to navigated from one page to another page.
+
+navbar navbar-default
+navbar-header
+navbar-toggle collapsed
+navbar-brand
+collapse navbar-collapse
+dropdown
+dropdown-toggle
+dropdown-menu
+divider
+
+FormProperty:
+=============
+form-horizontal
+form-group
+form-control
+navbar-form navbar-left
+nav navbar-nav navbar-right
+
+Reference link:
+================
+https://materializecss.com/
+
+Carousel:
+========
+--like slideshow
+
+carousel slide
+carousel
+carousel-indicators
+carousel-inner
+left carousel-control
+right carousel-control
+glyphicon glyphicon-chevron-right
+sr-only--it fousable to show element again
+
+
+Reference WebSite:
+==================
+https://bootsnipp.com/
+https://fontawesome.com/
+
+Bootstrap Media Objects:
+========================
+What is Media Objects?
+--In Bootstrap provides an easy way to align media objects--images or videos
+
+media
+media-left
+media-body
+media-heading
+media-right
+
+
+Angular:
+========
+--Angular is an JavaScript framework which makes you developed a SinglePageApplication
+(SPA).
+--Angular used based on the components
+--Google developed the Angular
+--Very first Angular 1.0 is called angular js
+--Angular 1.7 to 1.8
+--Angular is working on Client side Scripting
+--AngularJs--(JavaScript)
+--Angular6--(Typescript)
+--SinglePage Application itwork on dynamically change the contant in your page.
+
+Features in Angular:
+===================
+1.Desktop Application
+2.WebApplication
+3.Code splitting
+
+Installation for IDE:
+=====================
+visualstudioCode(install)
+
+Webstrom
+
+Sublime
+
+Atom
+
+Install the nodejs:
+
+https://nodejs.org/en/download/
+
+
+Check node is install or not:
+=============================
+cmd>>node --version

@@ -1,0 +1,585 @@
+css border:
+===========
+css border properties allow you to specify the style,width, and color
+for an elements in border.
+
+border-style property to specifies the borders
+
+dotted--to keep as dotted border
+dashed--to keep as dashed border
+double--to keep as double border
+inset--At 3D ridged border
+outset--At 3D outset border
+none--no border
+hidden--hidden border
+solid--to keep define the solid border
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.d1
+        {
+            border-style: dotted;
+            border-width: 5px;
+            border-color: blue;
+        }
+        p.d2
+        {
+            border-style: double;
+        }
+        p.d3
+        {
+            border-style: solid;
+        }
+        p.d4
+        {
+            border-style: inset;
+        }
+        p.d5
+        {
+            border-style: outset;
+        }
+        p.d6
+        {
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class="d1">This is Border concepts</p>
+    <p class="d2">This is Border concepts</p>
+    <p class="d3">This is Border concepts</p>
+    <p class="d4">This is Border concepts</p>
+    <p class="d5">This is Border concepts</p>
+    <p class="d6">This is Border concepts</p>
+</body>
+</html>
+
+==><meta>tag is used to particular information about the webpage.
+==><meta>tag is used to define metadata about an HTML Documents.
+
+CssMargins:
+==========
+--css margin properties are used to create space around the elements
+outside of any define the border.
+
+--Margin for each side of an elements(top,right,bottom and left)
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+auto-calculates the margin automatically
+
+%--px,cm,pt
+
+inherit--That margin should be inherited from the parent elements
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div
+        {
+            border: 1px solid black;
+            margin-top: 50px;
+            margin-bottom: 150px;
+            margin-right: 150px;
+            margin-left: 80px;
+            background-color: burlywood;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>Web design refers to the design of websites that are displayed
+     on the internet. It usually refers to the user 
+    experience aspects of website development rather than software development
+    </div>
+</body>
+</html>
+
+Css Padding:
+============
+--css padding properties are used to generate space around the your 
+content.
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+length-px,pt,cm
+%-width
+inherit--parent elements
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            border: 1px solid black;
+            background-color: burlywood;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div>Web design refers to the design of websites that are displayed
+        on the internet. It usually refers to the user 
+       experience aspects of website development rather than software development
+       </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            border: 1px solid black;
+            padding:50px 25px 50px 70px;
+        }
+    </style>
+</head>
+<body>
+    <div>Web design refers to the design of websites that are displayed
+        on the internet. It usually refers to the user 
+       experience aspects of website development rather than software development
+       </div>
+</body>
+</html>
+
+css height and width:
+=====================
+ <style>
+        p
+        {
+            height: 100px;
+            width: 50%;
+            background-color: blue;
+        }
+    </style>
+
+css list:
+=========
+--Unordered list--<ul>
+--Ordered list--<ol>
+--list items--<li>
+
+
+This is property specified item in the list:
+
+>>>list-style-type
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<u>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.a1
+        {
+            list-style-type: circle;
+            
+        }
+        ol.b1
+        {
+            list-style-type: lower-roman;
+        }
+    </style>
+</head>
+<body>
+    <ul class="a1">
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Press Releases</li>
+         <li>Amazon Cares</li>
+        <li>Gift a Smile</li>
+    </ul>
+
+
+    <ol class="b1">
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Press Releases</li>
+         <li>Amazon Cares</li>
+        <li>Gift a Smile</li>
+    </ol>
+</body>
+</html>
+
+css table:
+==========
+To specify table border in css.
+border
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td
+        {
+            border: 1px solid;
+            border-color: blue;
+            text-align: center;
+            
+        }
+        table
+        {
+            width: 50%;
+            border-collapse: collapse;
+        }
+       
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        </tr>
+        <tr>
+            <td>Azar</td>
+            <td>31</td>
+            <td>Krr</td>
+        </tr>
+        <tr>
+            <td>Sulaiman</td>
+            <td>23</td>
+            <td>dgl</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+css position:
+=============
+--css position property specifies the type of positioning methods used for an
+elements.
+
+position
+
+static--Static is not positioned in any special way.
+relative
+fixed
+absolute
+sticky--elements at top of page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div.s1
+        {
+             position: static;
+            border: 3px solid springgreen;
+        } */
+        /* div.s1
+        {
+            position: relative;
+            left: 30px;
+            top:50px;
+            border:3px solid red
+        } */
+       div.sticky
+       {
+           position: -webkit-sticky;
+           position: sticky;
+           top:0;
+           padding:5px;
+           background-color: rosybrown;
+           border: 2px solid slateblue;
+       }
+    </style>
+</head>
+<body>
+    <div class="sticky">
+        I am good
+    </div>
+    
+    <div class="s1">
+        This div values has position
+        <p >Web design refers to the design of websites that are displayed
+            on the internet. It usually refers to the user 
+           experience aspects 
+           
+           of website development rather than software development
+        </p>
+    </div>
+</body>
+</html>
+css float:
+==========
+--Property specifies how an element should float
+
+left
+right
+none
+inherit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img
+        {
+            float: none;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img src="loginlogo.png" alt="please check images" style="width: 150px;height: 150px;margin-left:15px;">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+         publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+</body>
+</html>
+
+Css Overflow:
+=============
+--Css overflow property controls what happens to content that is too big  to fit
+into an area.
+
+overflow--property
+
+visible--Default.Overflow is not clipped.The content outside the element's box
+
+hidden--rest of the content will be invisible
+
+scroll--A scrollbar is added to see the rest of the content
+
+auto--Similar to scroll
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            background-color: burlywood;
+            width: 300px;
+            height: 100px;
+            border: 1px dotted black;
+           /* overflow: visible;*/
+           /*overflow: hidden;*/
+           /*overflow: scroll;*/
+           /*overflow: auto;*/
+           overflow-x: hidden;
+           overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h2>css overflow</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+         publishing software like Aldus PageMaker including versions
+          of Lorem Ipsum.</p>
+          <div>
+            Lorem Ipsum is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been the industry's
+             standard dummy text ever since the 1500s, when an unknown 
+             printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+            PageMaker including versions of Lorem Ipsum.
+          </div>
+</body>
+</html>
+
+Css shadow effects:
+===================
+css you can add shadow to text and to elements
+
+text-shadow
+============
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            color: white;
+            text-shadow:3px 3px 5px pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to css Process</h1>
+</body>
+</html>
+==============
+box-shadow
+==========
+--css box-shadow property applies shadow to elements
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            width: 200px;
+            height: 100px;
+            padding: 15px;
+            background-color: yellow;
+            box-shadow: 10px 10px grey;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+         industry. Lorem Ipsum has .
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.c1
+        {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0,0.19);
+            text-align: center;
+        }
+        div.header
+        {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+        div.container
+        {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <div class="header">
+           <h1>1</h1>
+        </div>
+    </div>
+    <div class="container">
+       <p>Hai</p>
+    </div>
+</body>
+</html>
+
+Introduction to JavaScript:
+===========================
+--Javascript is most popular programming language
+--You have Using JavaScript in Web.
+--Always JavaScript is used in Client-side scripting
+
+Javascript syntax:
+==================
+var a1,b1;//declare variable
+
+x=5,y=6;//Assign the values
+
+c=a1+b1;//compute the values
+<script type="text/javascript">
+        var a1=2,b1=2;
+        var name="mohamed";
+        var f1=2.5;
+        c=a1*b1;
+        //display data in your console
+        document.write("Result is::"+c);
+        document.write("Your name is::"+name);
+        document.write("Your float value is::"+f1);
+    </script>
+
+JavaScript Literals:
+====================
+-Fixed values are called Literals
+-Variable values are called Vaiables
+-Variable to hold some different values
+1.Number
+2.String
+
+In JavaScript uses the var keyword to declare variables and to assign the value using
+(=)Assignment operators
+
+document.write() it is used to display the value in browser
+
+document is Variable used in Document(Class)
+
+write()is a method used in Document(Class)
+
+JavaScript Comments:
+====================
+/*
+Multicomment line
+*/
+//single comment line
+
+JavaScript Operators:
+====================
+--Always Operators is an doing some calculation
+a+b
+
+a is an operand
++ is an operators
+
+Types of Operators:
+===================
+1.Arithmetic Operators(+,/,%,*,-,**,++,--)
+2.Assignment Operators(=,+=,-=,/=,%=,**=,*=)
+3.String Operators(+)
+4.Relational Operators(<,<=,>,>=,==,!=,?,===)
+5.Logical Operators(&&,||,!)
+6.Type of Operators(typeof,instanceof)
+7.Bitwise Operators(&,|,~,^,<<,>>)
+
+
+
+

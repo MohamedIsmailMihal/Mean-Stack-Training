@@ -1,0 +1,530 @@
+HTML DOM(Document object model)
+================================
+getElementById() method return the elements that has the ID attributes with the
+specified value.
+
+<p id="sample">hello</p>
+
+Arithmetic Operators:
+=====================
+<script>
+        var a1=20,b1=30;
+        var c=a1*b1;
+        document.write(c);
+
+    </script>
+
+Assigment Operators:
+=====================
+<body>
+    <script>
+        var x=10;
+        x+=5;//x=x+5
+        document.write("Adding::"+x);
+    </script>
+</body>
+
+Acessing the getElementById Program:
+====================================
+  <h1 id="s1"></h1>
+    <script>
+        //var x="Welcome";
+        // var x=2;
+        // x+=10
+        // document.getElementById("s1").innerHTML=x;
+
+        document.getElementById("s1").innerHTML="Welcome";
+
+    </script>
+
+String Operators:
+================
+ <h1 id="d1" style="color: blue;"></h1>
+    <script>
+        var t1="Welcome";
+        var t2="mohamed";
+        var t3=t1+" "+t2;
+        //document.write("Your String value is::"+t3);
+        document.getElementById("d1").innerHTML=t3;
+    </script>
+======================================================
+  <script>
+        var x=10+10;
+        var y="4"+5;
+        var z="hai"+5;
+        document.write("x value is::"+x);
+        document.write("y value is::"+y);
+        document.write("z value is::"+z);
+    </script>
+
+Comparison Operator:
+====================
+--Comparison and Logical Operators are used to test for true or false.
+
+ <script>
+        var x=10;
+        var y=10;
+        document.write("Equal::"+(x==y));
+         document.write("Less than::"+(x<y));
+         document.write("greater than::"+(y>x));
+         document.write("Not Equal is::"+(x!=y));
+    </script>
+
+Logical Operator:
+=================
+<script>
+        var x1=100;
+        var y1=200;
+        document.write("LogicalAnd::",+(x1<y1)&&(y1>x1));
+        document.write("LogicalOR::",+(x1>y1)||(y1>x1));
+        document.write("LogicalNOT::",!(x1<y1));
+
+    </script>
+
+Conditional Operators:
+======================
+
+<script>
+        age=5;
+        var t1=(age<18)?"Too young":"Enough";
+        document.write(t1)
+    </script>
+
+
+Bitwise Operators:
+==================
+<script>
+        var a=2;
+        var b=3;
+        document.write("BitWiseAnd::",(a&b));
+        document.write("BitWiseOR::",(a|b));
+        document.write("BitWiseXOR::",(a^b));
+        document.write("LeftShift::",(a<<1));
+    </script>
+
+Conditional Statement:
+======================
+--Branching and looping
+
+What is Braching?
+===================
+--Single time execution
+
+--if statement
+--if else stmt
+--else if ladder stmt
+--nested if else stmt
+--switch stmt
+
+What is looping?
+=================
+--Looping is working for iteration process
+
+--for loop
+--nested for loop
+--while loop
+--do-while loop
+
+Braching:
+=========
+if stmt:
+========
+if(exp-1)
+{
+  //stmt
+}
+
+if else:
+========
+if(exp-1)
+{
+  //stmt
+}
+else
+{
+  //stmt
+}
+
+
+Nested if else stmt:
+====================
+if(exp-1)
+{
+  //stmt
+  if(exp-2)
+  {
+    //stmt
+  }
+  else
+  {
+   //stmt
+  }  
+
+}
+else
+{
+  //stmt
+}
+
+Else if ladder:
+===============
+if(exp-1)
+{
+  //stmt
+}
+else if(exp-2)
+{
+  //stmt
+}
+else if(exp-3)
+{
+  //stmt
+}
+else
+{
+  //stmt
+}
+
+switch stmt:
+============
+switch(exp)
+{ 
+  case 1:
+   //stmt
+  //break
+  case 2:
+  //stmt
+  //break
+  case 3:
+  //stmt
+  //break
+  default:
+  //stmt
+  //break;
+}
+
+if stmt:
+========
+<script>
+        var age=prompt("Enter the age is::")
+        //document.write("Your age is::",age);
+        if(age==18)
+        {
+            document.write("Your are is::",age);
+        }
+    </script>
+
+if else stmt:
+=============
+<script>
+        var age=prompt("Enter the age is::")
+        //document.write("Your age is::",age);
+        if(age==18)
+        {
+            document.write("Your age is equal==18::",age);
+        }
+        else{
+            document.write("Your age is not equal==18::",age)
+        }
+    </script>
+
+Task:
+=====
+Bitwise Operator
+
+Nested if else Statement:
+==========================
+<script>
+         age=parseInt(prompt("Enter the age is::"))
+        if(age>=60)
+        {
+             salary=parseInt(prompt("Enter the salary is::"))
+            if(salary>=20000)
+            {
+                bns=salary+500
+                document.write("Your salary is::",+bns);
+            }
+            else
+            {
+                bns=salary+1000;
+                document.write("Your salary is::",+bns);
+            }
+        }
+        else
+        {
+            document.write("Your age is low..");
+        }
+    </script>
+
+else if ladder example:
+=======================
+<script type="text/javascript">
+     var m1=parseInt(prompt("Enter the m1 marks"));
+     var m2=parseInt(prompt("Enter the m2 marks"));
+     var m3=parseInt(prompt("Enter the m3 marks"));
+     tot=m1+m2+m3;
+     document.write(tot);
+     if(tot>=900)
+     {
+         document.write("Grade-A");
+     }
+     else if(tot<=700)
+     {
+         document.write("Grade-B");
+     }
+     else
+     {
+         document.write("Grade-C");
+     }
+    </script>
+AnotherExample Using getElementById:
+====================================
+<body>
+    <p id="result"></p>
+    <script type="text/javascript">
+     var m1=parseInt(prompt("Enter the m1 marks"));
+     var m2=parseInt(prompt("Enter the m2 marks"));
+     var m3=parseInt(prompt("Enter the m3 marks"));
+     tot=m1+m2+m3;
+     document.write(tot);
+     if(tot>=900)
+     {
+         document.getElementById("result").innerHTML="GradeA";
+     }
+     else if(tot<=700)
+     {
+         document.write("Grade-B");
+     }
+     else
+     {
+         document.write("Grade-C");
+     }
+    </script>
+</body>
+switch statement:
+=================
+<body>
+    <p id="d1"></p>
+    <script>
+        var x=parseInt(prompt("Enter the x value is::"))
+        switch(x)
+        {
+            case 1:
+                n=parseInt(prompt("Enter the n value is::"));
+                if(n%2==0)
+                {
+                    document.getElementById("d1").innerHTML="Even";
+                }
+                else
+                {
+                    document.write("Odd");
+                }
+                //document.write("Case-1");
+                break;
+            case 2:
+                document.write("Case-2");
+                break;
+            case 3:
+                document.write("Case-3");
+                break;
+            default:
+                document.write("default statement");
+                break;            
+        } 
+    </script>
+</body>
+==============================================================
+Looping Concepts:
+=================
+--Looping is an iteration Process
+
+Different types of looping:
+===========================
+for loop
+for/in
+for/of
+while
+do-while 
+
+for loop-For-in-of loop
+========================
+for(initalvalue;cnd;incr/drc)
+{
+  //code
+}
+<script>
+        var i;
+        n=parseInt(prompt("Enter the n value::"));
+        for(i=0;i<=n;i++)
+        {
+             if(i%2==0)
+             {
+               document.write("Even",i);
+             }
+             else
+             {
+              document.write("Odd",i);
+             }
+           // document.write("I value is::",i);
+        }
+    </script>
+<script>
+        // i=0;
+        // for(;i<=5;i++)
+        // {
+        //     document.write("Ivalue is::"+i);
+        // }
+
+        i=0;
+        for(;i<=5;)
+        {
+            document.write("Ivalue is::"+i);
+            i++;
+        }
+    </script>
+<script>
+        var p=["azar","mohmed"];
+        // for(x in p)
+        // {
+        //     document.write(p[x]);
+        // }
+        for(x of p)
+        {
+            document.write(x);
+        }
+    </script>
+<script>
+        var p= ['imran','azar'];
+        var x="";
+       for (x of p) {
+         document.write(x);
+         } 
+    </script>
+While loop:
+===========
+inital value;
+while(cnd)
+{
+  //code
+  //incr/drc
+}
+  <script>
+    //  i=0;
+    //  while(i<=5)
+    //  {
+    //      document.write("I value is::",+i+"<br>")
+    //      i++;
+    //  }
+    i=0;
+    do
+    {
+        document.write("I value is::"+i+"<br>");
+        i++;
+
+    }while(i<=5);
+    </script>
+
+do-while loop:
+==============
+inital value;
+do
+{
+  //code
+  //incr or drc
+}while(exp-1);
+
+Function:
+=========
+--A function is an do as some particular task
+
+syntax:
+=======
+function functionname()
+{
+ //code
+}
+
+<script>
+        function sample()
+        {
+            n=prompt("Enter the value is::")
+            //document.write("welcome to function-1");
+            alert("Welcome to function-1"+n);
+          
+        }
+    </script>
+</head>
+<body>
+   <button onclick="sample()">ClickHere</button>
+</body>
+<body>
+    <button onclick="demo()">ClickHere</button>
+    <p id="d1"></p>
+    <script>
+
+        function demo()
+        {
+            var t1;
+            if(confirm("Press a button!"))
+            {
+                t1="welcome press ok button";
+            }
+            else
+            {
+                t1="Welcome press cancel button";
+            }
+            document.getElementById("d1").innerHTML=t1;
+        }
+
+    </script>
+</body>
+
+JavaScript Arrays:
+==================
+--An Array is an special variable it can be hold more than one value at a time.
+
+Syntax:
+=======
+var arrayname=[item1,item2...item-n];
+  <h3 id="d1"></h3>
+    <script>
+        var students=["kalam","rimas","parveen","abdur"];
+        document.getElementById("d1").innerHTML=students;
+    </script>
+
+ <h2 id="d1"></h2>
+    <script>
+        var students=new Array("mohamed","azar");
+        document.getElementById("d1").innerHTML=students;
+    </script>
+
+JavaScript DataFormate:
+========================
+ <h1 id="d1"></h1>
+    <script>
+       // var f=new Date("2020-12-30");
+       //var f=new Date("2020-12");
+      // var f=new Date("2020");
+      //var f=new Date("12/30/2020");
+      var f=new Date();
+        document.getElementById("d1").innerHTML=f;
+    </script>
+
+SelfLearn:
+==========
+Function:
+=========
+NaN
+eval
+getElementById()
+getElementByName()
+getElementByTag()
+String function
+validation (pattern)
+
+Events:
+=======
+onclick()
+ondbclick()
+onblur()
+

@@ -1,0 +1,235 @@
+HTML DOM(Document object model)
+================================
+getElementById() method return the elements that has the ID attributes with the
+specified value.
+
+<p id="sample">hello</p>
+
+Arithmetic Operators:
+=====================
+<script>
+        var a1=20,b1=30;
+        var c=a1*b1;
+        document.write(c);
+
+    </script>
+
+Assigment Operators:
+=====================
+<body>
+    <script>
+        var x=10;
+        x+=5;//x=x+5
+        document.write("Adding::"+x);
+    </script>
+</body>
+
+Acessing the getElementById Program:
+====================================
+  <h1 id="s1"></h1>
+    <script>
+        //var x="Welcome";
+        // var x=2;
+        // x+=10
+        // document.getElementById("s1").innerHTML=x;
+
+        document.getElementById("s1").innerHTML="Welcome";
+
+    </script>
+
+String Operators:
+================
+ <h1 id="d1" style="color: blue;"></h1>
+    <script>
+        var t1="Welcome";
+        var t2="mohamed";
+        var t3=t1+" "+t2;
+        //document.write("Your String value is::"+t3);
+        document.getElementById("d1").innerHTML=t3;
+    </script>
+======================================================
+  <script>
+        var x=10+10;
+        var y="4"+5;
+        var z="hai"+5;
+        document.write("x value is::"+x);
+        document.write("y value is::"+y);
+        document.write("z value is::"+z);
+    </script>
+
+Comparison Operator:
+====================
+--Comparison and Logical Operators are used to test for true or false.
+
+ <script>
+        var x=10;
+        var y=10;
+        document.write("Equal::"+(x==y));
+         document.write("Less than::"+(x<y));
+         document.write("greater than::"+(y>x));
+         document.write("Not Equal is::"+(x!=y));
+    </script>
+
+Logical Operator:
+=================
+<script>
+        var x1=100;
+        var y1=200;
+        document.write("LogicalAnd::",+(x1<y1)&&(y1>x1));
+        document.write("LogicalOR::",+(x1>y1)||(y1>x1));
+        document.write("LogicalNOT::",!(x1<y1));
+
+    </script>
+
+Conditional Operators:
+======================
+
+<script>
+        age=5;
+        var t1=(age<18)?"Too young":"Enough";
+        document.write(t1)
+    </script>
+
+
+Bitwise Operators:
+==================
+<script>
+        var a=2;
+        var b=3;
+        document.write("BitWiseAnd::",(a&b));
+        document.write("BitWiseOR::",(a|b));
+        document.write("BitWiseXOR::",(a^b));
+        document.write("LeftShift::",(a<<1));
+    </script>
+
+Conditional Statement:
+======================
+--Branching and looping
+
+What is Braching?
+===================
+--Single time execution
+
+--if statement
+--if else stmt
+--else if ladder stmt
+--nested if else stmt
+--switch stmt
+
+What is looping?
+=================
+--Looping is working for iteration process
+
+--for loop
+--nested for loop
+--while loop
+--do-while loop
+
+Braching:
+=========
+if stmt:
+========
+if(exp-1)
+{
+  //stmt
+}
+
+if else:
+========
+if(exp-1)
+{
+  //stmt
+}
+else
+{
+  //stmt
+}
+
+
+Nested if else stmt:
+====================
+if(exp-1)
+{
+  //stmt
+  if(exp-2)
+  {
+    //stmt
+  }
+  else
+  {
+   //stmt
+  }  
+
+}
+else
+{
+  //stmt
+}
+
+Else if ladder:
+===============
+if(exp-1)
+{
+  //stmt
+}
+else if(exp-2)
+{
+  //stmt
+}
+else if(exp-3)
+{
+  //stmt
+}
+else
+{
+  //stmt
+}
+
+switch stmt:
+============
+switch(exp)
+{ 
+  case 1:
+   //stmt
+  //break
+  case 2:
+  //stmt
+  //break
+  case 3:
+  //stmt
+  //break
+  default:
+  //stmt
+  //break;
+}
+
+if stmt:
+========
+<script>
+        var age=prompt("Enter the age is::")
+        //document.write("Your age is::",age);
+        if(age==18)
+        {
+            document.write("Your are is::",age);
+        }
+    </script>
+
+if else stmt:
+=============
+<script>
+        var age=prompt("Enter the age is::")
+        //document.write("Your age is::",age);
+        if(age==18)
+        {
+            document.write("Your age is equal==18::",age);
+        }
+        else{
+            document.write("Your age is not equal==18::",age)
+        }
+    </script>
+
+Task:
+=====
+Bitwise Operator
+Why salary is not added in nested if else stmt
+Write a Program for Else if ladder?

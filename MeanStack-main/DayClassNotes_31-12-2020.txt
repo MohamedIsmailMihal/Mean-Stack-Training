@@ -1,0 +1,264 @@
+JavaScript Form validation:
+============================
+--Pattern is an attributes specifies a regular expression that the <input>
+elements value to be checked.
+
+Syntax:
+======
+<input pattern="regexp">
+
+regexp--Specifies a regular expression that <input>element it to be
+validation process.
+
+Reference of Regexp Process:
+============================
+https://www.rexegg.com/regex-quickstart.html
+
+<body>
+    <form>
+        <label>Code:</label>
+        <input type="text" name="code" pattern="[A-Za-z]{1,3}"/>
+        <br>
+        <input type="submit" value="Click"/>
+    </form>
+</body>
+
+<body>
+    <form>
+        <label>UserName:</label>
+        <input type="text" pattern="[A-Za-z]{4}"/>
+        <label>Password:</label>
+        <input type="password" pattern="[A-Z1-9]{3}"/>
+        <input type="submit" value="Click"/>
+    </form>
+</body>
+
+Jquery Concepts:
+================
+--Jquery is JavaScript Library.
+--Jquery also simplifies like AJAX calls and DOM manipulation.
+--Jquery is probably the most popular and also the most extendable.
+
+--Google
+--Netflix
+
+CDN--Content Delivery Network
+==============================
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+Syntax:
+=======
+$(selector).action()
+
+--A $ sign to define/access jquery
+--(selector) to be used to find HTML elements
+--action() is an used to performed on the elements
+
+$("h1").hide()--hide all<h1>elements
+
+Document Ready Event:
+=====================
+
+$(document).ready(function(){
+
+   //code
+});
+
+$(function(){
+  //code
+};
+
+Event:
+=====
+--Event is doing some process/action in a webpage can respond to are called events.
+
+--Clicking the button
+--moving mouse over an element
+
+KeyboardEvent
+==============
+keypress
+keydown
+keyup
+
+Mouse Event:
+============
+click
+dblclick
+mouseenter
+mouseleave
+
+FormEvents:
+===========
+submit
+change
+focus
+blur
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--OnlineProcesCDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Offline Process-->
+    <!-- <script src="jquery.min.js"></script> -->
+    <script>
+        $(document).ready(function(){
+           $("p").click(function(){
+               $(this).hide();
+           });
+        });
+    </script>
+</head>
+<body>
+    <h1>HidingProcess</h1>
+    <p>ClickMe</p>
+    <p>ClickHere</p>
+</body>
+</html>
+==============================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--OnlineProcesCDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Offline Process-->
+    <!-- <script src="jquery.min.js"></script> -->
+    <script>
+        $(document).ready(function(){
+           $("p").dblclick(function(){
+               $(this).hide();
+           });
+        });
+    </script>
+</head>
+<body>
+    <h1>HidingProcess</h1>
+    <p>ClickMe</p>
+    <p>ClickHere</p>
+</body>
+</html>
+===================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#d1").mouseenter(function(){
+            alert("You entered H1 tag");
+           });
+        });
+    </script>
+</head>
+<body>
+    <h1 id="d1">Welcome to JqueryProcess</h1>
+</body>
+</html>
+
+===========================================
+Effects in Jquery
+=================
+Many Event are there in Jquery
+--Hide
+--Show
+--toggle
+--fade
+  --fadeIn()
+  --fadeOut()
+  --fadeToggle()
+  --fadeTo()
+--chaining
+--callback
+==============================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#d1").fadeOut();
+            $("#d2").fadeIn("slow")
+          });
+        });
+    </script>
+</head>
+<body>
+    <button>ClickHereFadeOut</button>
+    <button>ClickHereFadeIn</button>
+    <div id="d1" style="width: 70px;height: 70px;background-color: blue;">
+     
+    </div><br>
+    <div id="d2" style="width: 70px;height: 70px;background-color:chartreuse;">
+
+    </div>
+</body>
+</html>
+=========================================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#d1").fadeToggle();
+            $("#d2").fadeToggle("slow")
+          });
+        });
+    </script>
+</head>
+<body>
+    <button>ClickHereFadeOut</button>
+   
+    <div id="d1" style="width: 70px;height: 70px;background-color: blue;">
+     
+    </div><br>
+    <div id="d2" style="width: 70px;height: 70px;background-color:chartreuse;">
+
+    </div>
+</body>
+</html>
+========================================================================
+Jquery Method Chaining:
+=======================
+--The Chaining allows to run multiple jquery methods on the same element with the
+single code.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+              $("#d1").css("color","red").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 id="d1">This Multiple Process</h1>
+    <button>ClickHere</button>
+</body>
+</html>
